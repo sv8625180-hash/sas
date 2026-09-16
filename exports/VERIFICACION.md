@@ -34,6 +34,24 @@ Comprobación del **2026-09-16 a las 03:57 UTC**, con datos públicos y sin rein
 
 El sandbox también registró interrupciones del memory guard en procesos pequeños con unos 13 GiB disponibles según sus propias métricas, y un bloqueo del gestor `sandbox_setup` por lifecycle lease/fence. Ambos problemas se comunicaron a Hoplite; la instalación aislada utilizó el mismo script versionado, sin quitar la prueba de extracción HTML ni modificar los controles de la plataforma. El fallo funcional de Fetch queda conservado y separado de la integridad del paquete.
 
+### Comprobación posterior de Fetch
+
+El **2026-09-16**, después de publicar el paquete, se ejecutó una operación mediante el **MCP Fetch nativo de este hilo**: `fetch({"url":"https://example.com","max_length":2000})`. Devolvió el texto real «This domain is for use in documentation examples without needing permission. Avoid use in operations.» y el enlace a IANA. Esta operación funcional **sí pasó**, con el mismo código runtime incluido en el ZIP.
+
+Es evidencia complementaria desde el transporte nativo del proyecto de origen, no una repetición satisfactoria de la prueba interrumpida en la extracción aislada ni una prueba en la cuenta destino. Las cuatro integraciones tienen operaciones reales satisfactorias observadas en esta verificación, pero las interrupciones intermitentes del entorno permanecen documentadas. El reinicio del sandbox tampoco estaba disponible (`Sandbox restart is not configured`); no se afirma que ese problema de plataforma se haya resuelto.
+
+## Instalación independiente en GitHub Actions
+
+El [workflow 35055590503](https://github.com/sv8625180-hash/sas/actions/runs/35055590503), sobre el commit del paquete `d97deb5719ea598104457b3f03c2f2e7569d258e`, terminó **correctamente el 2026-09-16 a las 04:26 UTC**. En un runner Ubuntu nuevo pasaron:
+
+- Instalación de las dependencias fijadas y extracción HTML local real.
+- Suite completa de 70 pruebas.
+- Segundo setup consecutivo para comprobar idempotencia.
+- Reconstrucción del paquete y contraste del ZIP entregado con sus fuentes.
+- Comprobación de whitespace de Git.
+
+Estos resultados confirman la instalación reproducible fuera del sandbox que registró SIGTERM. El workflow no realiza las consultas MCP live ni autoriza una cuenta de Hoplite; esos estados se mantienen separados.
+
 ## Lo que no acredita esta entrega
 
 - No se accedió a la cuenta de destino ni se autorizó su biblioteca personal.
