@@ -1,0 +1,12 @@
+{
+  "repository": "actions/upload-artifact",
+  "tag": "v7.0.1",
+  "sha": "043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
+  "checked_at": "2026-09-16",
+  "release_published_at": "2026-04-10T17:31:14Z",
+  "release_url": "https://github.com/actions/upload-artifact/releases/tag/v7.0.1",
+  "ref_url": "https://api.github.com/repos/actions/upload-artifact/git/ref/tags/v7.0.1",
+  "schema_url": "https://raw.githubusercontent.com/actions/upload-artifact/043fb46d1a93c77aae656e7c1c64a875d1fc6a0a/action.yml",
+  "runtime": "node24",
+  "verification": "Exact tag resolves directly to commit; path, name, include-hidden-files, if-no-files-found and retention-days are supported inputs. Not executed in GitHub at the time of this audit."
+}

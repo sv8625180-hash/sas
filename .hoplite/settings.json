@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "scripts": {
+    "setup": {
+      "enabled": true,
+      "command": "bash .hoplite/setup.sh"
+    }
+  },
+  "mcpServers": [
+    {
+      "name": "research-fetch",
+      "enabled": true,
+      "config": {
+        "transport": "stdio",
+        "command": "python3",
+        "args": ["tools/hoplite-research/scripts/run_mcp.py", "fetch"]
+      }
+    },
+    {
+      "name": "research-arxiv",
+      "enabled": true,
+      "config": {
+        "transport": "stdio",
+        "command": "python3",
+        "args": ["tools/hoplite-research/scripts/run_mcp.py", "arxiv"]
+      }
+    },
+    {
+      "name": "research-context7",
+      "enabled": true,
+      "config": {
+        "transport": "http",
+        "url": "https://mcp.context7.com/mcp"
+      }
+    },
+    {
+      "name": "research-firecrawl",
+      "enabled": true,
+      "config": {
+        "transport": "http",
+        "url": "https://mcp.firecrawl.dev/v2/mcp"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+.hoplite/attachments/
+.hoplite/artifacts/
+.hoplite/rebases/
+.hoplite/runtime/
+node_modules/
+.venv/
+.research/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store

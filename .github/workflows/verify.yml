@@ -1,0 +1,41 @@
+name: Verify research toolkit
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '24.19.0'
+          package-manager-cache: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          version: '0.9.28'
+          enable-cache: false
+      - name: Install locked dependencies
+        run: bash .hoplite/setup.sh
+      - name: Offline regression tests
+        run: tools/hoplite-research/.venv/bin/python -m unittest discover -s tests -v
+      - name: Verify idempotent setup
+        run: bash .hoplite/setup.sh
+      - name: Check tracked whitespace
+        run: git diff --check

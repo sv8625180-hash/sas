@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-09-16T02:53:00.830886+00:00",
+  "live": true,
+  "scope": "Requested project-transport smoke tests, not every tool or account-wide availability; catalog success does not establish functional or native availability",
+  "servers": {
+    "fetch": {
+      "status": "passed",
+      "functional_status": "passed",
+      "native_discovery": "not_checked",
+      "initialized": true,
+      "tools": [
+        "fetch"
+      ],
+      "catalog_matches": true,
+      "private_url_rejected": true,
+      "live_assertion": "example.com retrieved and its real body text extracted"
+    },
+    "arxiv": {
+      "status": "passed",
+      "functional_status": "passed",
+      "native_discovery": "not_checked",
+      "initialized": true,
+      "tools": [
+        "download_paper",
+        "export_citations",
+        "get_abstract",
+        "get_paper_outline",
+        "list_papers",
+        "read_paper",
+        "read_paper_section",
+        "search_paper_text",
+        "search_papers"
+      ],
+      "catalog_matches": true,
+      "live_assertion": "arXiv search returned Attention Is All You Need"
+    },
+    "context7": {
+      "status": "passed",
+      "functional_status": "passed",
+      "native_discovery": "not_checked",
+      "initialized": true,
+      "tools": [
+        "query-docs",
+        "resolve-library-id"
+      ],
+      "catalog_matches": true,
+      "live_assertion": "Context7 resolved real MCP Python SDK documentation"
+    },
+    "firecrawl": {
+      "status": "passed",
+      "functional_status": "passed",
+      "native_discovery": "not_checked",
+      "initialized": true,
+      "tools": [
+        "firecrawl_parse",
+        "firecrawl_scrape",
+        "firecrawl_search"
+      ],
+      "catalog_matches": true,
+      "live_assertion": "Firecrawl keyless returned example.com content; it may be cached"
+    }
+  },
+  "passed": true
+}

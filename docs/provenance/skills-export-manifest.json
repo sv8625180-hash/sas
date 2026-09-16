@@ -1,0 +1,440 @@
+{
+  "schema_version": 1,
+  "scope": {
+    "automations": "No convierte estas skills en automations ni amplía su alcance.",
+    "contents": "Cada directorio contiene únicamente SKILL.md; referencias y recursos de origen no se exportan.",
+    "installation": "No instala skills en una cuenta, biblioteca personal ni directorio global.",
+    "kind": "export-only",
+    "mcp": "No incluye ni configura MCP; los MCP permanecen configurados por proyecto."
+  },
+  "skills": [
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://raw.githubusercontent.com/davila7/claude-code-templates/ec126b9ded118ba66c2125fa39eb5b0e87d701bd/cli-tool/components/skills/business-marketing/ab-test-setup/SKILL.md"
+          ]
+        },
+        {
+          "identifier": "marketingskills",
+          "license": "MIT License",
+          "license_sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "source_urls": [
+            "https://raw.githubusercontent.com/coreyhaines31/marketingskills/3617bdc883230c2eec6cd77721987f71650902e5/skills/ab-test-setup/SKILL.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "2c8426cf24debfe84c7242680e5f59945b0507808e6a062b478c7f73a21a43c8",
+      "group": "adapted_from_aitmpl",
+      "name": "ab-test-setup",
+      "path": "ab-test-setup/SKILL.md",
+      "source_root_sha256": "55b4566b24a362422128fbec6a5d5eacf50cf14090edd2e66914c223c89d444c"
+    },
+    {
+      "attributions": [],
+      "export_root_sha256": "89b08ac0209b7f9e8cd66c80d7260bdd96e7fa25bb73cc0a6dd41f2e50f6d443",
+      "group": "restored_from_iaalfallo",
+      "name": "ai-opportunity-validation",
+      "path": "ai-opportunity-validation/SKILL.md",
+      "source_root_sha256": "80eacce6d268e5ab59e12f15bd97a52cd9d6974b39be7208415a36830f449c8a"
+    },
+    {
+      "attributions": [],
+      "export_root_sha256": "46406705ca3fd3e3baf99933314d17b818372b192a0f5a4ef7ce0a9f083291ae",
+      "group": "portable_research_extensions",
+      "name": "ai-service-evaluation",
+      "path": "ai-service-evaluation/SKILL.md",
+      "source_root_sha256": "9ea4fcce20280a2b9d5c759c94e0bc40aa9c565a7b0bd9b6bcab28d8e0e33b2a"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://raw.githubusercontent.com/davila7/claude-code-templates/ec126b9ded118ba66c2125fa39eb5b0e87d701bd/cli-tool/components/skills/business-marketing/analytics-tracking/SKILL.md"
+          ]
+        },
+        {
+          "identifier": "marketingskills",
+          "license": "MIT License",
+          "license_sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "source_urls": [
+            "https://raw.githubusercontent.com/coreyhaines31/marketingskills/3617bdc883230c2eec6cd77721987f71650902e5/skills/analytics-tracking/SKILL.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "02bb5a9de086b69157f582e9a002d08778914d0aab88518a4620ec9358541d36",
+      "group": "adapted_from_aitmpl",
+      "name": "analytics-tracking",
+      "path": "analytics-tracking/SKILL.md",
+      "source_root_sha256": "fc122ed72ad4f75402fa80004c544e8c3dc1c5722ab33978ef0108908390a688"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://github.com/davila7/claude-code-templates/blob/028931d584e7c1c8aa9700ba24e9ca885e8eabe0/cli-tool/components/agents/deep-research-team/competitive-intelligence-analyst.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "3b2e0655cb82711f4b7915240c357b8c44c6415d2b7385dcfc164cbaa79d9625",
+      "group": "restored_from_iaalfallo",
+      "name": "competitive-intelligence",
+      "path": "competitive-intelligence/SKILL.md",
+      "source_root_sha256": "2a5c767cb60ab08af3596978ba6c66e9536beb600362567e01ce586ffa919390"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://raw.githubusercontent.com/davila7/claude-code-templates/ec126b9ded118ba66c2125fa39eb5b0e87d701bd/cli-tool/components/skills/business-marketing/competitor-alternatives/SKILL.md"
+          ]
+        },
+        {
+          "identifier": "marketingskills",
+          "license": "MIT License",
+          "license_sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "source_urls": [
+            "https://raw.githubusercontent.com/coreyhaines31/marketingskills/3617bdc883230c2eec6cd77721987f71650902e5/skills/competitor-alternatives/SKILL.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "1ecc8e26a359df8de4e17d45500446e494597190d71637636b9c04735518db18",
+      "group": "adapted_from_aitmpl",
+      "name": "competitor-alternatives",
+      "path": "competitor-alternatives/SKILL.md",
+      "source_root_sha256": "142de2cfb75f53fda5a7e05b7a5a6302046dd8e79913c964769a728b6a5cc018"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://raw.githubusercontent.com/davila7/claude-code-templates/ec126b9ded118ba66c2125fa39eb5b0e87d701bd/cli-tool/components/skills/business-marketing/copywriting/SKILL.md"
+          ]
+        },
+        {
+          "identifier": "marketingskills",
+          "license": "MIT License",
+          "license_sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "source_urls": [
+            "https://raw.githubusercontent.com/coreyhaines31/marketingskills/3617bdc883230c2eec6cd77721987f71650902e5/skills/copywriting/SKILL.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "8cc4247fdd808a467992355ee49b647abc876172ee5401cc47918e9ff11b0370",
+      "group": "adapted_from_aitmpl",
+      "name": "copywriting",
+      "path": "copywriting/SKILL.md",
+      "source_root_sha256": "85792c45d601cb6df24ffb77f45a26d3d94338e9bacbf7c621a11aa18d55d0fb"
+    },
+    {
+      "attributions": [],
+      "export_root_sha256": "a348c3e0f2efbade550cd4f52762c0046cbd060468f377bcd7e49026ea7e437f",
+      "group": "project_authored",
+      "name": "customer-discovery",
+      "path": "customer-discovery/SKILL.md",
+      "source_root_sha256": "cad3285cd23366376e5d2bdc814867ff57a59e8af99c82f98774184c0ba7440c"
+    },
+    {
+      "attributions": [],
+      "export_root_sha256": "8d4ba4494cf4b0f459c3da4018c043ffb8907cb14db68d146e1ebe06937bd44c",
+      "group": "restored_from_iaalfallo",
+      "name": "deep-web-research",
+      "path": "deep-web-research/SKILL.md",
+      "source_root_sha256": "eab1672f06426e517b13b3ee44448ec33187373f96bb6cce55e0128c0611a97f"
+    },
+    {
+      "attributions": [],
+      "export_root_sha256": "f6112eee43b24f317f7de9b8f22f1afd62ff7ee64684da18aae2ba2e6686f734",
+      "group": "project_authored",
+      "name": "distribution-validation",
+      "path": "distribution-validation/SKILL.md",
+      "source_root_sha256": "ae98fad8ebce59f9d49c365b49adeccdadbd80a5adf6c22eba6e4443ec48489c"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://raw.githubusercontent.com/davila7/claude-code-templates/ec126b9ded118ba66c2125fa39eb5b0e87d701bd/cli-tool/components/skills/business-marketing/free-tool-strategy/SKILL.md"
+          ]
+        },
+        {
+          "identifier": "marketingskills",
+          "license": "MIT License",
+          "license_sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "source_urls": [
+            "https://raw.githubusercontent.com/coreyhaines31/marketingskills/3617bdc883230c2eec6cd77721987f71650902e5/skills/free-tool-strategy/SKILL.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "f3dc1539e65b8cd80b28c74c34baecd4fb99dc729b63c9f73a6878043ed5b093",
+      "group": "adapted_from_aitmpl",
+      "name": "free-tool-strategy",
+      "path": "free-tool-strategy/SKILL.md",
+      "source_root_sha256": "43c752a93aca4e73d21cdab58c4d33db0d4261da859aa9ee8ef0a2c0848c79fa"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://raw.githubusercontent.com/davila7/claude-code-templates/ec126b9ded118ba66c2125fa39eb5b0e87d701bd/cli-tool/components/skills/business-marketing/launch-strategy/SKILL.md"
+          ]
+        },
+        {
+          "identifier": "marketingskills",
+          "license": "MIT License",
+          "license_sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "source_urls": [
+            "https://raw.githubusercontent.com/coreyhaines31/marketingskills/3617bdc883230c2eec6cd77721987f71650902e5/skills/launch-strategy/SKILL.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "7fba53752a1a060f349b23e3e21a2e39fbe40b3c8741e6880d22f99512eb909b",
+      "group": "adapted_from_aitmpl",
+      "name": "launch-strategy",
+      "path": "launch-strategy/SKILL.md",
+      "source_root_sha256": "fe764f2e4375a23b4e38a120623779dbcb7c99c677618349c4ac8a6689e2cbac"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://raw.githubusercontent.com/davila7/claude-code-templates/ec126b9ded118ba66c2125fa39eb5b0e87d701bd/cli-tool/components/skills/business-marketing/lead-research-assistant/SKILL.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "f33178ea59a26a6c0401cf615550a8b4f4e49dad9792db1769da35ee17f4c3b5",
+      "group": "adapted_from_aitmpl",
+      "name": "lead-research-assistant",
+      "path": "lead-research-assistant/SKILL.md",
+      "source_root_sha256": "34778363a07bb4e7258475fe458bed1f419f892da8d9ebcfdc507908d91f6dfc"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://github.com/davila7/claude-code-templates/blob/028931d584e7c1c8aa9700ba24e9ca885e8eabe0/cli-tool/components/agents/business-marketing/market-researcher.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "271effe90edd7ff22493782e0b08637aa7db2b71d94db2348654cbf23ed13d82",
+      "group": "restored_from_iaalfallo",
+      "name": "market-customer-research",
+      "path": "market-customer-research/SKILL.md",
+      "source_root_sha256": "0a6a293ecbb0949c8f6424e6e2df67b7b35614e95efdae781b742e72fa5652cd"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://raw.githubusercontent.com/davila7/claude-code-templates/ec126b9ded118ba66c2125fa39eb5b0e87d701bd/cli-tool/components/skills/business-marketing/page-cro/SKILL.md"
+          ]
+        },
+        {
+          "identifier": "marketingskills",
+          "license": "MIT License",
+          "license_sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "source_urls": [
+            "https://raw.githubusercontent.com/coreyhaines31/marketingskills/3617bdc883230c2eec6cd77721987f71650902e5/skills/page-cro/SKILL.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "a77c31525dc0d39cd71cf6ba43309da4608d2782b684815e3fee7bee2820ba07",
+      "group": "adapted_from_aitmpl",
+      "name": "page-cro",
+      "path": "page-cro/SKILL.md",
+      "source_root_sha256": "b4440905abd9f6f36209bf79890f20dbce509029011fa2e394f7b7af7f7c64e0"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://raw.githubusercontent.com/davila7/claude-code-templates/ec126b9ded118ba66c2125fa39eb5b0e87d701bd/cli-tool/components/skills/business-marketing/pricing-strategy/SKILL.md"
+          ]
+        },
+        {
+          "identifier": "marketingskills",
+          "license": "MIT License",
+          "license_sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "source_urls": [
+            "https://raw.githubusercontent.com/coreyhaines31/marketingskills/3617bdc883230c2eec6cd77721987f71650902e5/skills/pricing-strategy/SKILL.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "0606810ac098c53e258811936297f8f3b6415c8808670ed17d6a89c709bcc9e8",
+      "group": "adapted_from_aitmpl",
+      "name": "pricing-strategy",
+      "path": "pricing-strategy/SKILL.md",
+      "source_root_sha256": "80ec2d41b0be05174e44bcec1901f746c9831b3dfd7064da18dbeeb5efe5b0f2"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://raw.githubusercontent.com/davila7/claude-code-templates/ec126b9ded118ba66c2125fa39eb5b0e87d701bd/cli-tool/components/skills/business-marketing/product-manager-toolkit/SKILL.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "00908d49be45aaaa7d22eb9298fcad2aa543686905552c4bf42496cb9d1d5982",
+      "group": "adapted_from_aitmpl",
+      "name": "product-manager-toolkit",
+      "path": "product-manager-toolkit/SKILL.md",
+      "source_root_sha256": "1e187c6a42266f75e51b9ef0ec79c3cced84a94f62fd896c26b8fbd834e2de04"
+    },
+    {
+      "attributions": [],
+      "export_root_sha256": "711992f7511b4719d5b1740cffa954505f6732317760af8f9b1d577d707ebc91",
+      "group": "portable_research_extensions",
+      "name": "public-data-analysis",
+      "path": "public-data-analysis/SKILL.md",
+      "source_root_sha256": "d92e9644f00107da8570dc6663b369844173aa7ea6cd4f4b5d115a3971c10918"
+    },
+    {
+      "attributions": [],
+      "export_root_sha256": "217908c6c5d6a7340c2a2f5d0b5b54121cc007ce4c77df0990bcdf7277ecc012",
+      "group": "project_authored",
+      "name": "research-team",
+      "path": "research-team/SKILL.md",
+      "source_root_sha256": "0b75819ce0b3ea5fab60a7fc3b0fc4eb6ada506cdd75f6d6cb61dafffb959990"
+    },
+    {
+      "attributions": [],
+      "export_root_sha256": "486fa865259e04e867de05186465814ac3f49cd838a349026f96a6c2218b3fcb",
+      "group": "portable_research_extensions",
+      "name": "scholarly-metadata",
+      "path": "scholarly-metadata/SKILL.md",
+      "source_root_sha256": "1874ecfa732b4f71c6c1fabd457cdd1a6bd28117b2d73067b86e474cfcb1d4c8"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://raw.githubusercontent.com/davila7/claude-code-templates/ec126b9ded118ba66c2125fa39eb5b0e87d701bd/cli-tool/components/skills/business-marketing/seo-audit/SKILL.md"
+          ]
+        },
+        {
+          "identifier": "marketingskills",
+          "license": "MIT License",
+          "license_sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "source_urls": [
+            "https://raw.githubusercontent.com/coreyhaines31/marketingskills/3617bdc883230c2eec6cd77721987f71650902e5/skills/seo-audit/SKILL.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "2c3076c4dd33fae07b5512116cce6d3909eb4975911e89eb1c89ca548f44685a",
+      "group": "adapted_from_aitmpl",
+      "name": "seo-audit",
+      "path": "seo-audit/SKILL.md",
+      "source_root_sha256": "1e933a6981672025568481cab3baf130e315450ea5c558cd17fde9c1ea6b0308"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://github.com/davila7/claude-code-templates/blob/028931d584e7c1c8aa9700ba24e9ca885e8eabe0/cli-tool/components/agents/deep-research-team/fact-checker.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "d38cf39ff5bec2f3a6158502b8e4106ec11a5b4c5b7b69fbc4ed43381a0ea993",
+      "group": "restored_from_iaalfallo",
+      "name": "source-fact-checking",
+      "path": "source-fact-checking/SKILL.md",
+      "source_root_sha256": "4ed360e9911a1e642aaccc94b3b9c938b71c2b983bac6f360d2bbe2cfa2d2318"
+    },
+    {
+      "attributions": [],
+      "export_root_sha256": "5cc41182ee835fb1fb24e4d04d3b3a5c49f57babbb42099216e1a9c242a3a7cd",
+      "group": "project_authored",
+      "name": "tool-due-diligence",
+      "path": "tool-due-diligence/SKILL.md",
+      "source_root_sha256": "08b86cbde3bc40323aa99b3589274a2f18288dc045086a8c8bea194324b84352"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://github.com/davila7/claude-code-templates/blob/028931d584e7c1c8aa9700ba24e9ca885e8eabe0/cli-tool/components/agents/business-marketing/trend-analyst.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "7387ad2d904ba140c5062d854a322af2ce0c64b806f8694b8711d9d2936a2b0b",
+      "group": "restored_from_iaalfallo",
+      "name": "trend-analysis",
+      "path": "trend-analysis/SKILL.md",
+      "source_root_sha256": "0f08c06779bc5e0d8feb5c07f8a2084b9eb2a945fffdfa0d57fd17d1472883a7"
+    },
+    {
+      "attributions": [],
+      "export_root_sha256": "bec8e0fe40cb197e2f7a4124e2b7d99fcbf6fbdd35720ee86c85d824b97fdb89",
+      "group": "project_authored",
+      "name": "unit-economics",
+      "path": "unit-economics/SKILL.md",
+      "source_root_sha256": "070f61dc88617753f9cadcf7a5d15a135fde9d053c7289836bf2360d96c76a9b"
+    },
+    {
+      "attributions": [
+        {
+          "identifier": "aitmpl",
+          "license": "MIT License",
+          "license_sha256": "15cc073ffa3a01bb7da145aeae2a842b473860d142c92485536ee9c91195a705",
+          "source_urls": [
+            "https://github.com/davila7/claude-code-templates/blob/028931d584e7c1c8aa9700ba24e9ca885e8eabe0/cli-tool/components/agents/ai-specialists/search-specialist.md"
+          ]
+        }
+      ],
+      "export_root_sha256": "4eaf4db817de9b6587067d9230f597b121bec1e2789c5b2affd131fdc123c1a5",
+      "group": "restored_from_iaalfallo",
+      "name": "web-search-strategy",
+      "path": "web-search-strategy/SKILL.md",
+      "source_root_sha256": "72f69142e1cebec7f1050bf851cd2f04cc85e00ab690b7e32d8d41eddc1dd35e"
+    }
+  ],
+  "source_inventory": {
+    "path": "docs/toolkit-manifest.json",
+    "sha256": "de3be2dac430f9c5119bdb3051c389355eca02c6148cbcf9ec531afb60d6c891"
+  }
+}

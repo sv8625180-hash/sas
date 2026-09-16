@@ -1,0 +1,84 @@
+name: Weekly toolkit maintenance
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: toolkit-maintenance
+  cancel-in-progress: false
+
+jobs:
+  review-updates:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '24.19.0'
+          package-manager-cache: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          version: '0.9.28'
+          enable-cache: false
+      - run: bash .hoplite/setup.sh
+      - run: tools/hoplite-research/.venv/bin/python -m unittest discover -s tests -v
+      - name: Detect upstream skill changes without activating them
+        id: sources
+        continue-on-error: true
+        run: python3 scripts/check_upstreams.py --output reports/upstream-status.json
+      - name: Probe configured MCP transports with public data
+        id: mcp
+        continue-on-error: true
+        run: tools/hoplite-research/.venv/bin/python tools/hoplite-research/scripts/research_client.py check --live --output reports/mcp-health.json
+      - name: Preserve reports even if pull request publication fails
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: toolkit-maintenance-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            reports/upstream-status.json
+            reports/mcp-health.json
+            .research/checks/*.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+      - name: Preserve reviewable maintenance evidence
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          token: ${{ github.token }}
+          branch: automation/toolkit-maintenance
+          base: ${{ github.event.repository.default_branch }}
+          add-paths: reports/*.json
+          commit-message: 'chore: refresh toolkit maintenance evidence'
+          title: 'chore: revisar fuentes de skills y salud de MCP'
+          body: |
+            Informe automático con datos públicos. No activa instrucciones descargadas.
+            Revise cambios de fuentes, rutas retiradas y errores; Dependabot propone
+            por separado actualizaciones de Python, npm y GitHub Actions.
+
+            ## Verification
+            - Setup fijado y pruebas offline ejecutados antes de las consultas.
+            - El resultado funcional exacto de cada MCP está en reports/mcp-health.json.
+            - Un fallo o límite conserva su estado; no se reintenta para eludir cuotas.
+            - Esta PR no se fusiona automáticamente. El token estándar puede no disparar
+              otros workflows; no asumir CI de PR ejecutada por el mero hecho de crearla.
+      - name: Fail visibly when a public health check failed
+        if: always() && (steps.sources.outcome == 'failure' || steps.mcp.outcome == 'failure')
+        run: |
+          echo 'A source or MCP check failed. Inspect the preserved reports; do not mark it as healthy.'
+          exit 1

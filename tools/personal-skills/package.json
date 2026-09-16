@@ -1,0 +1,12 @@
+{
+  "name": "hoplite-personal-skills-setup",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.20.0"
+  },
+  "dependencies": {
+    "@usehoplite/cli": "2.3.2",
+    "skills": "1.5.26"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-09-16",
+  "scope": "User-provided archives inspected without executing their installer; files integrated with the adaptations documented in Git",
+  "archives": [
+    {
+      "name": "hoplite-mcp-para-proyectos.zip",
+      "sha256": "60ee60b8c25ceb4d7ab7656a5a5398ca9cb84e5bf597b35e8ebf580e42b6e04b",
+      "uncompressed_bytes": 307993
+    },
+    {
+      "name": "hoplite-skills-personales.zip",
+      "sha256": "aedbc0afa29da2d5bc25a8bb7f7e25416d50bed9fde14795f19f49765fb1b5ef",
+      "uncompressed_bytes": 179862,
+      "verified_skill_roots": 26
+    }
+  ],
+  "safety": "Archive paths, duplicate paths, symlinks, sizes, skill hashes and dependency registries were inspected before execution. Original ZIPs and local runtime files are not committed."
+}

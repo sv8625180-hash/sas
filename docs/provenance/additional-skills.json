@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "name": "cohort-analysis",
+      "path": "cohort-analysis/SKILL.md",
+      "export_root_sha256": "db4ea78b492610d8c95f793b4bc533cd24da481648e59824fa82aae6d5821d7f",
+      "source_root_sha256": "bd721a429e58c71a1a488ac1e89ba2bcbb9e179cb9c0b5eac44a3c3b3e9fdb15",
+      "reviewed_at": "2026-09-16",
+      "attributions": [
+        {
+          "identifier": "phuryn-pm-skills",
+          "license": "MIT License",
+          "license_sha256": "a2c922f9b81b4f40347ddfa79c38eda0f1278b5a6d108bd4099b4da254c774ee",
+          "source_urls": [
+            "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-data-analytics/skills/cohort-analysis/SKILL.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

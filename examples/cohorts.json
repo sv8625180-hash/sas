@@ -1,0 +1,7 @@
+[
+  {"cohort": "2026-06", "period": 1, "eligible": 10, "retained": 8},
+  {"cohort": "2026-07", "period": 1, "eligible": 5, "retained": 1},
+  {"cohort": "empty", "period": 1, "eligible": 0, "retained": 0},
+  {"cohort": "2026-06", "period": 2, "eligible": 10, "retained": 6},
+  {"cohort": "2026-07", "period": 2, "eligible": 5, "retained": null}
+]

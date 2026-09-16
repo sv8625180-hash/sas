@@ -1,0 +1,151 @@
+{
+  "checked_at": "2026-09-16T02:25:12.049636+00:00",
+  "selection": "GitHub REST releases/latest: latest published non-draft, non-prerelease release; not a moving major tag",
+  "authentication": "none; no credential files, environment credentials, or authenticated GitHub CLI used",
+  "method": "release tag -> exact git ref -> recursively dereferenced annotated tag -> commit SHA-1",
+  "retry_policy": "no retries; stop all further requests on HTTP 429 or HTTP 403 rate limit",
+  "actions": [
+    {
+      "repository": "actions/checkout",
+      "status": "verified",
+      "evidence": [
+        {
+          "url": "https://api.github.com/repos/actions/checkout/releases/latest",
+          "checked_at": "2026-09-16T02:25:12.049661+00:00",
+          "http_status": 200
+        },
+        {
+          "url": "https://api.github.com/repos/actions/checkout/git/ref/tags/v7.0.1",
+          "checked_at": "2026-09-16T02:25:12.194225+00:00",
+          "http_status": 200
+        }
+      ],
+      "tag": "v7.0.1",
+      "release_id": 356804776,
+      "release_url": "https://github.com/actions/checkout/releases/tag/v7.0.1",
+      "release_published_at": "2026-07-20T15:10:05Z",
+      "release_created_at": "2026-07-17T18:45:11Z",
+      "ref": "refs/tags/v7.0.1",
+      "ref_object_type": "commit",
+      "ref_object_sha": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "tag_dereferences": [],
+      "commit_sha": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "uses": "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "commit_url": "https://github.com/actions/checkout/commit/3d3c42e5aac5ba805825da76410c181273ba90b1"
+    },
+    {
+      "repository": "actions/setup-node",
+      "status": "verified",
+      "evidence": [
+        {
+          "url": "https://api.github.com/repos/actions/setup-node/releases/latest",
+          "checked_at": "2026-09-16T02:25:12.389788+00:00",
+          "http_status": 200
+        },
+        {
+          "url": "https://api.github.com/repos/actions/setup-node/git/ref/tags/v7.0.0",
+          "checked_at": "2026-09-16T02:25:12.524324+00:00",
+          "http_status": 200
+        }
+      ],
+      "tag": "v7.0.0",
+      "release_id": 353541365,
+      "release_url": "https://github.com/actions/setup-node/releases/tag/v7.0.0",
+      "release_published_at": "2026-07-14T02:46:05Z",
+      "release_created_at": "2026-07-14T02:38:27Z",
+      "ref": "refs/tags/v7.0.0",
+      "ref_object_type": "commit",
+      "ref_object_sha": "820762786026740c76f36085b0efc47a31fe5020",
+      "tag_dereferences": [],
+      "commit_sha": "820762786026740c76f36085b0efc47a31fe5020",
+      "uses": "actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+      "commit_url": "https://github.com/actions/setup-node/commit/820762786026740c76f36085b0efc47a31fe5020"
+    },
+    {
+      "repository": "actions/setup-python",
+      "status": "verified",
+      "evidence": [
+        {
+          "url": "https://api.github.com/repos/actions/setup-python/releases/latest",
+          "checked_at": "2026-09-16T02:25:12.715928+00:00",
+          "http_status": 200
+        },
+        {
+          "url": "https://api.github.com/repos/actions/setup-python/git/ref/tags/v7.0.0",
+          "checked_at": "2026-09-16T02:25:12.881468+00:00",
+          "http_status": 200
+        }
+      ],
+      "tag": "v7.0.0",
+      "release_id": 356486059,
+      "release_url": "https://github.com/actions/setup-python/releases/tag/v7.0.0",
+      "release_published_at": "2026-07-20T03:15:01Z",
+      "release_created_at": "2026-07-20T03:02:03Z",
+      "ref": "refs/tags/v7.0.0",
+      "ref_object_type": "commit",
+      "ref_object_sha": "5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "tag_dereferences": [],
+      "commit_sha": "5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "uses": "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "commit_url": "https://github.com/actions/setup-python/commit/5fda3b95a4ea91299a34e894583c3862153e4b97"
+    },
+    {
+      "repository": "astral-sh/setup-uv",
+      "status": "verified",
+      "evidence": [
+        {
+          "url": "https://api.github.com/repos/astral-sh/setup-uv/releases/latest",
+          "checked_at": "2026-09-16T02:25:13.065070+00:00",
+          "http_status": 200
+        },
+        {
+          "url": "https://api.github.com/repos/astral-sh/setup-uv/git/ref/tags/v10.1.0",
+          "checked_at": "2026-09-16T02:25:13.229901+00:00",
+          "http_status": 200
+        }
+      ],
+      "tag": "v10.1.0",
+      "release_id": 370464894,
+      "release_url": "https://github.com/astral-sh/setup-uv/releases/tag/v10.1.0",
+      "release_published_at": "2026-09-10T19:20:03Z",
+      "release_created_at": "2026-09-10T19:10:42Z",
+      "ref": "refs/tags/v10.1.0",
+      "ref_object_type": "commit",
+      "ref_object_sha": "bec219d24cd3e171d82865faccec33120bb574f4",
+      "tag_dereferences": [],
+      "commit_sha": "bec219d24cd3e171d82865faccec33120bb574f4",
+      "uses": "astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4",
+      "commit_url": "https://github.com/astral-sh/setup-uv/commit/bec219d24cd3e171d82865faccec33120bb574f4"
+    },
+    {
+      "repository": "peter-evans/create-pull-request",
+      "status": "verified",
+      "evidence": [
+        {
+          "url": "https://api.github.com/repos/peter-evans/create-pull-request/releases/latest",
+          "checked_at": "2026-09-16T02:25:13.395487+00:00",
+          "http_status": 200
+        },
+        {
+          "url": "https://api.github.com/repos/peter-evans/create-pull-request/git/ref/tags/v8.1.1",
+          "checked_at": "2026-09-16T02:25:13.539131+00:00",
+          "http_status": 200
+        }
+      ],
+      "tag": "v8.1.1",
+      "release_id": 307634937,
+      "release_url": "https://github.com/peter-evans/create-pull-request/releases/tag/v8.1.1",
+      "release_published_at": "2026-04-10T16:27:57Z",
+      "release_created_at": "2026-04-10T16:23:55Z",
+      "ref": "refs/tags/v8.1.1",
+      "ref_object_type": "commit",
+      "ref_object_sha": "5f6978faf089d4d20b00c7766989d076bb2fc7f1",
+      "tag_dereferences": [],
+      "commit_sha": "5f6978faf089d4d20b00c7766989d076bb2fc7f1",
+      "uses": "peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1",
+      "commit_url": "https://github.com/peter-evans/create-pull-request/commit/5f6978faf089d4d20b00c7766989d076bb2fc7f1"
+    }
+  ],
+  "completed_at": "2026-09-16T02:25:13.706198+00:00",
+  "passed": true
+}
