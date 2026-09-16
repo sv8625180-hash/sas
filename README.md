@@ -2,6 +2,12 @@
 
 Toolkit reproducible para **este proyecto de Hoplite**. Integra las **26 skills de los ZIP originales**, una adaptación adicional revisada de **`cohort-analysis`**, y **4 servidores MCP**. No promete ingresos, investigación exhaustiva de Internet ni disponibilidad permanente de servicios externos.
 
+## Transferir a otra cuenta desde cero
+
+Descarga [el ZIP portable completo](exports/hoplite-kit-portable.zip) y [su SHA-256](exports/hoplite-kit-portable.zip.sha256). En la cuenta destino, adjunta el ZIP en un hilo de un proyecto nuevo y pega [este prompt](PROMPT-PARA-HOPLITE.txt). La [guía paso a paso](LEEME-PRIMERO.md), incluida también en el ZIP, distingue instalación de proyecto, importación personal autorizada y comprobación nativa en un hilo nuevo.
+
+El ZIP contiene las 27 skills, los 4 MCP, locks, setup, pruebas y mantenimiento; excluye credenciales, dependencias instaladas e historial. Se reconstruye con `python3 scripts/exportar_kit.py build` y se contrasta con los archivos actuales mediante `python3 scripts/exportar_kit.py check`. Consulta la [verificación de esta entrega](exports/VERIFICACION.md), incluidos los fallos de entorno y lo pendiente en la cuenta destino.
+
 ## Resultado y alcance
 
 | Capa | Resultado | Límite |

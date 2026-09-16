@@ -168,7 +168,7 @@ try {
     verify(entries);
     if (action === 'importar') {
       console.log('Se seleccionan SOLO los nombres del paquete. Revisa la confirmación de Hoplite.');
-      console.log('No se ejecuta onboard. Si se inicia sesión, hazlo en el navegador oficial; no pegues claves en el chat.');
+      console.log('No se ejecuta onboard. Autoriza el CLI oficial en tu terminal privada con la cuenta destino; no pegues claves ni códigos en el chat.');
       tool('@usehoplite/cli/bin/hoplite-cli.js', ['skills', 'import-global', ...entries.flatMap(entry => ['--name', entry.name])]);
       console.log('Revisa el resultado anterior: cancelar o encontrar skills existentes no significa importar todas.');
       console.log('La comprobación final se hace en un hilo nuevo de otro proyecto, como indica la guía.');

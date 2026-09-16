@@ -37,5 +37,11 @@ jobs:
         run: tools/hoplite-research/.venv/bin/python -m unittest discover -s tests -v
       - name: Verify idempotent setup
         run: bash .hoplite/setup.sh
+      - name: Verify portable delivery
+        run: |
+          python3 scripts/exportar_kit.py build --output .research/hoplite-kit-portable.zip
+          if [ -f exports/hoplite-kit-portable.zip ]; then
+            python3 scripts/exportar_kit.py check
+          fi
       - name: Check tracked whitespace
         run: git diff --check

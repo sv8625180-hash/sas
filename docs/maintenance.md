@@ -29,7 +29,7 @@ Los ficheros locales no demuestran una tarea programada funcionando. Deben estar
 
 Los PR creados con `GITHUB_TOKEN` pueden no disparar otros workflows. El mantenimiento ejecuta sus pruebas antes de proponer el informe, pero no presenta como ejecutada una CI de PR que no arrancó. Los fallos de la propia automatización deben revisarse en Actions. Las cuotas y eventual coste de minutos son los de la cuenta de GitHub; no se contrató ningún plan.
 
-El repositorio estaba vacío al inicio de esta tarea. La publicación inicial y la existencia de una rama base se documentan en el resultado de entrega; no se da por fusionado un cambio solo por haber creado un commit.
+En una transferencia, estas condiciones deben comprobarse de nuevo en el repositorio de destino. El ZIP no transfiere permisos, suscripciones ni el estado de Actions de otro repositorio; no se da por fusionado un cambio solo por haber creado un commit.
 
 ## Revisión de una actualización
 
