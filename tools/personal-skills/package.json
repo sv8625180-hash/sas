@@ -6,7 +6,7 @@
     "node": ">=22.20.0"
   },
   "dependencies": {
-    "@usehoplite/cli": "2.3.2",
+    "@usehoplite/cli": "3.0.0",
     "skills": "1.5.26"
   }
 }
