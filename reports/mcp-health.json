@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-16T02:53:00.830886+00:00",
+  "checked_at": "2026-10-05T06:42:38.090749+00:00",
   "live": true,
   "scope": "Requested project-transport smoke tests, not every tool or account-wide availability; catalog success does not establish functional or native availability",
   "servers": {
