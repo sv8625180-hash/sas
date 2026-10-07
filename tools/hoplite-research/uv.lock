@@ -147,7 +147,7 @@ wheels = [
 
 [[package]]
 name = "arxiv-mcp-server"
-version = "0.7.2"
+version = "0.8.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiofiles" },
@@ -164,9 +164,9 @@ dependencies = [
     { name = "starlette" },
     { name = "uvicorn" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3c/72/f0be946200235ba21c12042a0058d021d2e679ebbfaecba2afc0ac248efe/arxiv_mcp_server-0.7.2.tar.gz", hash = "sha256:024c8122112617af9eea9d913a6c46ec5cf1d6b5fbcbac43c8ba0615bfe9d65c", size = 345189, upload-time = "2026-08-24T00:01:18.656Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/64/37/f6026a41b99d85306de862d18618382a6d2831886d9ee2e6855824747c1b/arxiv_mcp_server-0.8.0.tar.gz", hash = "sha256:75243f9625df65988b21243320108e887151087c91f839a9f18b32ca86f61c18", size = 371561, upload-time = "2026-10-03T01:26:34.148Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/57/31/44977f1667b10a8a029a0790be439ec892581d2276e934292b47746bb5d5/arxiv_mcp_server-0.7.2-py3-none-any.whl", hash = "sha256:ae8abb0940d698cba18ff4b8b99cedd61d74d717d1af524ca4b223de1b739248", size = 101624, upload-time = "2026-08-24T00:01:17.217Z" },
+    { url = "https://files.pythonhosted.org/packages/37/67/faa75b6f583572c1e15e21391ec77eee4d7357557f995b9b053f1f06390e/arxiv_mcp_server-0.8.0-py3-none-any.whl", hash = "sha256:5bae7dfa135a4d2c9128e976b9341e9bcc000e1f6c73de6dd93f3b4223d831c8", size = 115148, upload-time = "2026-10-03T01:26:32.687Z" },
 ]
 
 [[package]]
@@ -524,7 +524,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "arxiv-mcp-server", specifier = "==0.7.2" },
+    { name = "arxiv-mcp-server", specifier = "==0.8.0" },
     { name = "mcp", specifier = "==1.30.0" },
     { name = "mcp-server-fetch", specifier = "==2026.8.18" },
 ]
