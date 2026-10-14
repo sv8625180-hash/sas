@@ -6,7 +6,7 @@ requires-python = ">=3.11,<3.14"
 dependencies = [
     "arxiv-mcp-server==0.7.2",
     "mcp==1.30.0",
-    "mcp-server-fetch==2026.8.18",
+    "mcp-server-fetch==2026.10.10",
 ]
 
 [tool.uv]
